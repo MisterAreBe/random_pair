@@ -28,6 +28,7 @@ class TestRandomPair < Minitest::Test
         names = ["Tien Shinhan", "Kami Piccolo", "Master Roshi", "Pet Turtle"]
         refute_equal(pair(names), pair(names))
         p pair(names)
+        p pair(names)
     end
 
 end
