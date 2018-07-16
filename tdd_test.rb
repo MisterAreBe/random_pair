@@ -24,4 +24,10 @@ class TestRandomPair < Minitest::Test
         assert_equal([["Mr.", "Popo"], ["Goku", "Son"], ["Prince", "Vegeta"], ["King", "Piccolo"]], pair(names))
     end
 
+    def test_array_for_random_outcome
+        names = ["Tien Shinhan", "Kami Piccolo", "Master Roshi", "Pet Turtle"]
+        refute_equal(pair(names), pair(names))
+        p pair(names)
+    end
+
 end
