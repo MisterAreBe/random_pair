@@ -15,4 +15,8 @@ class TestRandomPair < Minitest::Test
         assert_equal([["Popo"]], pair(["Popo"]))
     end
 
+    def test_for_2_names
+        assert_equal([["Popo", "Goku"]], pair(["Popo", "Goku"]))
+    end
+
 end
