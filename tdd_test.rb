@@ -27,13 +27,19 @@ class TestRandomPair < Minitest::Test
     def test_array_for_random_outcome
         names = ["Tien Shinhan", "Kami Piccolo", "Master Roshi", "Pet Turtle"]
         refute_equal(pair(names), pair(names))
-        p pair(names); p pair(names)
+        #p pair(names); p pair(names)
     end
 
     def test_array_for_odd_number_of_names
         names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namik", "Prince Trunks", "Bean Daddy", "Kid Goku"]
         refute_equal(pair(names), pair(names))
-        p pair(names); p pair(names)
+        #p pair(names); p pair(names)
+    end
+
+    def test_array_for_odd_number_of_names_again
+        names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namik", "Prince Trunks", "Bean Daddy", "Kid Goku", "Sher"]
+        refute_equal(pair(names), pair(names))
+        p pair(names); #p pair(names)
     end
 
 end
