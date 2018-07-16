@@ -12,7 +12,7 @@ class TestRandomPair < Minitest::Test
     end
 
     def test_array_for_name
-        assert_equal("Popo", pair(["Popo"]))
+        assert_equal([["Popo"]], pair(["Popo"]))
     end
 
 end
