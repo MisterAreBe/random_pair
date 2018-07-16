@@ -1,3 +1,3 @@
-def pair()
+def pair(names)
     []
 end
