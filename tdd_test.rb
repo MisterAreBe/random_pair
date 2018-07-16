@@ -12,15 +12,16 @@ class TestRandomPair < Minitest::Test
     end
 
     def test_array_for_name
-        assert_equal([["Popo"]], pair(["Popo"]))
+        assert_equal([["Mr.", "Popo"]], pair(["Mr. Popo"]))
     end
 
     def test_for_2_names
-        assert_equal([["Popo", "Goku"]], pair(["Popo", "Goku"]))
+        assert_equal([["Mr.", "Popo"], ["Goku", "Son"]], pair(["Mr. Popo", "Goku Son"]))
     end
 
     def test_for_4_names
-        assert_equal([["Popo", "Goku"], ["Vegeta", "Krillan"]], pair(["Popo", "Goku", "Vegeta", "Krillan"]))
+        names = ["Mr. Popo", "Goku Son", "Prince Vegeta", "King Piccolo"]
+        assert_equal([["Mr.", "Popo"], ["Goku", "Son"], ["Prince", "Vegeta"], ["King", "Piccolo"]], pair(names))
     end
 
 end
