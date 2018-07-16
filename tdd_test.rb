@@ -11,9 +11,9 @@ class TestRandomPair < Minitest::Test
         assert_equal(Array, pair([]).class)
     end
 
-    def test_array_for_name
-        assert_equal([["Mr.", "Popo"]], pair(["Mr. Popo"]))
-    end
+    # def test_array_for_name
+    #     assert_equal([["Mr.", "Popo"]], pair(["Mr. Popo"]))
+    # end
 
     # def test_for_2_names
     #     assert_equal([["Mr.", "Popo"], ["Goku", "Son"]], pair(["Mr. Popo", "Goku Son"]))
@@ -31,15 +31,15 @@ class TestRandomPair < Minitest::Test
     end
 
     def test_array_for_odd_number_of_names
-        names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namik", "Prince Trunks", "Bean Daddy", "Kid Goku"]
+        names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namek", "Prince Trunks", "Bean Daddy", "Kid Goku"]
         refute_equal(pair(names), pair(names))
         #p pair(names); p pair(names)
     end
 
     def test_array_for_odd_number_of_names_again
-        names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namik", "Prince Trunks", "Bean Daddy", "Kid Goku", "Sher"]
+        names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namek", "Prince Trunks", "Bean Daddy", "Kid Goku", "Sher"]
         refute_equal(pair(names), pair(names))
-        p pair(names); #p pair(names)
+        #p pair(names); #p pair(names)
     end
 
 end

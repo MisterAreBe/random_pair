@@ -18,5 +18,10 @@ def pair(names)
         list << [first_names[i], n]
     end
 
+    unless first_names.count <= last_names.count
+        temp = first_names.pop
+        list << temp
+    end
+
     list
 end
