@@ -1,0 +1,3 @@
+def pair()
+    []
+end
