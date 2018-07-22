@@ -8,7 +8,7 @@ class TestRandomPair < Minitest::Test
     end
 
     def test_for_array_class
-        assert_equal(Array, pair([]).class)
+        assert_equal(Array, pair([""]).class)
     end
 
     # def test_array_for_name
@@ -39,7 +39,13 @@ class TestRandomPair < Minitest::Test
     def test_array_for_odd_number_of_names_again
         names = ["Lord Frieza", "Captain Ginyu", "King Piccolo", "Elder Namek", "Prince Trunks", "Bean Daddy", "Kid Goku", "Sher"]
         refute_equal(pair(names), pair(names))
-        #p pair(names); #p pair(names)
+        #p pair(names); p pair(names)
+    end
+
+    def test_for_single_names
+        names = ["Bob", "Ted", "Cher", "Acorn", "Bobo", "Tommy", "Marv"]
+        refute_equal(pair(names), pair(names))
+        #p pair(names); p pair(names)
     end
 
 end
